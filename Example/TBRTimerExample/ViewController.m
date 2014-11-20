@@ -7,21 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "TBRTimer.h"
+
+static const NSTimeInterval timeInterval = 3.0;
 
 @interface ViewController ()
+
+@property (nonatomic, strong) TBRTimer *timer;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)startTimer:(UIButton *)sender
+{
+  self.timer = [TBRTimer scheduledTimerWithTimeInterval:timeInterval
+                                                  block:^{
+                                                    NSLog(@"TBRTimer fired");
+                                                  }];
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (IBAction)stopTimer:(UIButton *)sender
+{
+  [self.timer invalidate];
 }
 
 @end

@@ -14,6 +14,7 @@
 		4F2FFE151A1E0B5000530A06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2FFE141A1E0B5000530A06 /* Images.xcassets */; };
 		4F2FFE181A1E0B5000530A06 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2FFE161A1E0B5000530A06 /* LaunchScreen.xib */; };
 		4F2FFE241A1E0B5000530A06 /* TBRTimerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FFE231A1E0B5000530A06 /* TBRTimerExampleTests.m */; };
+		4F2FFE2F1A1E0C1B00530A06 /* TBRTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FFE2E1A1E0C1B00530A06 /* TBRTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		4F2FFE1D1A1E0B5000530A06 /* TBRTimerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBRTimerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2FFE221A1E0B5000530A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F2FFE231A1E0B5000530A06 /* TBRTimerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBRTimerExampleTests.m; sourceTree = "<group>"; };
+		4F2FFE2D1A1E0C1B00530A06 /* TBRTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBRTimer.h; path = ../../TBRTimer/TBRTimer.h; sourceTree = "<group>"; };
+		4F2FFE2E1A1E0C1B00530A06 /* TBRTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBRTimer.m; path = ../../TBRTimer/TBRTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		4F2FFDFB1A1E0B5000530A06 = {
 			isa = PBXGroup;
 			children = (
+				4F2FFE301A1E0C2200530A06 /* TBRTimer */,
 				4F2FFE061A1E0B5000530A06 /* TBRTimerExample */,
 				4F2FFE201A1E0B5000530A06 /* TBRTimerExampleTests */,
 				4F2FFE051A1E0B5000530A06 /* Products */,
@@ -117,6 +121,16 @@
 				4F2FFE221A1E0B5000530A06 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F2FFE301A1E0C2200530A06 /* TBRTimer */ = {
+			isa = PBXGroup;
+			children = (
+				4F2FFE2D1A1E0C1B00530A06 /* TBRTimer.h */,
+				4F2FFE2E1A1E0C1B00530A06 /* TBRTimer.m */,
+			);
+			name = TBRTimer;
+			path = TBRTimerExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,7 @@
 			files = (
 				4F2FFE101A1E0B5000530A06 /* ViewController.m in Sources */,
 				4F2FFE0D1A1E0B5000530A06 /* AppDelegate.m in Sources */,
+				4F2FFE2F1A1E0C1B00530A06 /* TBRTimer.m in Sources */,
 				4F2FFE0A1A1E0B5000530A06 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +429,7 @@
 				4F2FFE291A1E0B5000530A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F2FFE2A1A1E0B5000530A06 /* Build configuration list for PBXNativeTarget "TBRTimerExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +438,7 @@
 				4F2FFE2C1A1E0B5000530A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
